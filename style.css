@@ -42,15 +42,20 @@ textarea{
   color: #000000;
   border-top: 1px dashed #000000;
 }
+.screen {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border-radius: 15px;
+}
 
 .past {
-  background-color: #d3d3d3;
+  background-color: red;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: rgb(88, 87, 92);
 }
 
 .future {
@@ -62,7 +67,6 @@ textarea{
   border: 1px solid transparent;
   border-radius: 15px;
   background-color: #06AED5;
-
 }
 
 .saveBtn i:hover {
@@ -73,4 +77,13 @@ color: rgb(46, 46, 46);
   background-color: rgb(201, 97, 89);
 }
 
-.submit-btn
+.emptyCol {
+  height: 7em;
+  background-color: teal;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+textarea, li {
+  color: white;
+}
