@@ -17,7 +17,7 @@ console.log(emptyList)
 // Changes background color based on time
 // Get current time and update html
 
-var hour = moment().format("hh");
+var hour = moment().format("HH");
 var m = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#currentDay").text(m.toString())
 function updateTime() {
