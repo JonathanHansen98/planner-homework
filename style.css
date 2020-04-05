@@ -14,6 +14,7 @@ textarea {
 }
 
 .jumbotron {
+  height: 200px;
   text-align: left;
   background-color: transparent;
   color: white;
@@ -28,7 +29,7 @@ textarea {
   width: 300px;
   height: 450px;
   background-color: white;
-  border: skyblue solid 5px;
+  border: white solid 5px;
   border-radius: 15px;
 }
 
@@ -48,12 +49,13 @@ textarea {
 
 .saveBtn {
   border: 1px solid transparent;
-  border-radius: 15px;
-  background-color: #06aed5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
 }
 
 .saveBtn i:hover {
-  color: rgb(46, 46, 46);
+  color: rgb(80, 80, 80);
 }
 
 .col-2 {
@@ -62,15 +64,14 @@ textarea {
 
 .emptyCol {
   height: 7em;
-  background-color: teal;
+  background-color: white;
   overflow: auto;
-  border-radius: 15px;
   padding: 10px;
 }
 
 textarea,
 li {
-  color: white;
+  color: black;
 }
 
 #currentDay {
@@ -86,7 +87,8 @@ li {
   color: white;
 }
 
-/* CSS Analog Clock By: JWardee Source:https://codepen.io/JWardee/pen/XmMvGK */
+/* CSS Analog Clock By: JWardee 
+Source:https://codepen.io/JWardee/pen/XmMvGK */
 
 .circle {
   width: 180px;

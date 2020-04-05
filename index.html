@@ -15,35 +15,54 @@
 </head>
 
 <body>
+<!-- Header Section -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-8">
-        <header class="jumbotron">
-          <h1 class="display-3">Work Day Scheduler</h1>
-          <p class="lead">A simple calendar app for scheduling your work day</p>
-          <h1 id="currentDay" class="lead"></h1> 
-          <button class="btn" id="clear-btn">Clear</button>
-        </header>
+      <div class="col-8 jumbotron">
+        <div class="row">
+          <div class="col-12 my-auto">
+            <h1 class="display-3">Work Day Scheduler</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-auto">
+            <p class="lead">A simple calendar app for scheduling your work day</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-auto">
+            <h1 id="currentDay" class="lead"></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 my-auto">
+            <button class="btn" id="clear-btn">Clear</button>
+          </div>
+        </div>
       </div>
+
+<!-- CSS Analog Clock By: JWardee 
+Source:https://codepen.io/JWardee/pen/XmMvGK -->
       <div class="col-4">
         <div class="py-5">
           <div class="circle">
-          <div class="face">
-            <div id="hour" class="hour"></div>
-            <div id="minute" class="minute"></div>
-            <div id="second" class="second"></div>
+            <div class="face">
+              <div id="hour" class="hour"></div>
+              <div id="minute" class="minute"></div>
+              <div id="second" class="second"></div>
+            </div>
           </div>
         </div>
-        </div>
-        
       </div>
     </div>
   </div>
 
 
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-4">
+<!-- Timeblock Section -->
+  <div class="container">
+    <!-- Timeblock Row 1 -->
+    <div class="row my-5">
+      <div class="col-4">
         <div data-time="09" class="screen d-flex flex-column">
           <div class="row my-auto">
             <div class="col-12">
@@ -73,262 +92,263 @@
             </div>
           </div>
         </div>
+      </div>
 
-        </div>
-
-        <div class="col-4">
-          <div data-time="10" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  10 a.m.
-                </h1>
-              </div>
-            </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+      <div class="col-4">
+        <div data-time="10" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                10 a.m.
+              </h1>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div data-time="11" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  11 a.m.
-                </h1>
-              </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
             </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
             </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-5">
-        <div class="col-4">
-          <div data-time="12" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  12 p.m.
-                </h1>
-              </div>
-            </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+      <div class="col-4">
+        <div data-time="11" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                11 a.m.
+              </h1>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div data-time="13" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  1 p.m.
-                </h1>
-              </div>
-            </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div data-time="14" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  2 p.m.
-                </h1>
-              </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
             </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-5">
-        <div class="col-4">
-          <div data-time="15" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  3 p.m.
-                </h1>
-              </div>
-            </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+    </div>
+    <!-- Timeblock Row 2 -->
+    <div class="row my-5">
+      <div class="col-4">
+        <div data-time="12" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                12 p.m.
+              </h1>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div data-time="16" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  4 p.m.
-                </h1>
-              </div>
-            </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div data-time="17" class="screen d-flex flex-column">
-            <div class="row my-auto">
-              <div class="col-12">
-                <h1 class="timeInt w-100 text-center">
-                  5 p.m.
-                </h1>
-              </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
             </div>
-            <div class="row my-auto mx-auto w-100">
-              <div class="col-12 emptyCol">
-                <ul class="emptyList">
-                </ul>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 text">
-                <form class="timeForm">
-                  <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="row my-auto">
-              <div class="col-12 ">
-                <button type="submit" class="w-100 saveBtn text-center my-1 ">
-                  <i class="fas fa-save fa-3x"></i>
-                </button>
-                </form>
-              </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-4">
+        <div data-time="13" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                1 p.m.
+              </h1>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div data-time="14" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                2 p.m.
+              </h1>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Timeblock Row 3 -->
+    <div class="row my-5">
+      <div class="col-4">
+        <div data-time="15" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                3 p.m.
+              </h1>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div data-time="16" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                4 p.m.
+              </h1>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div data-time="17" class="screen d-flex flex-column">
+          <div class="row my-auto">
+            <div class="col-12">
+              <h1 class="timeInt w-100 text-center">
+                5 p.m.
+              </h1>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto w-100">
+            <div class="col-12 emptyCol">
+              <ul class="emptyList">
+              </ul>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 text">
+              <form class="timeForm">
+                <textarea class="w-100  flex-grow-1" cols="84" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="row my-auto">
+            <div class="col-12 ">
+              <button type="submit" class="w-100 saveBtn text-center my-1 ">
+                <i class="fas fa-save fa-3x"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./lib/moment/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

@@ -2,8 +2,8 @@
 
 var emptyList = $(".emptyList")
 var reminders = JSON.parse(localStorage.getItem("reminders"))
-// If there is reminders in local storage, loop through both empty list and reminders array and append each reminder to the list, does not append empty reminders
 
+// If there is reminders in local storage, loop through both empty list and reminders array and append each reminder to the list, does not append empty reminders
 if (reminders !== null) {
     for (let index = 0; index < emptyList.length; index++) {
         let remInd = (reminders[index])
@@ -19,7 +19,8 @@ if (reminders !== null) {
 }
 
 // Get current time and update html
-
+// Line below for testing colors 
+// var hour = 13
 var hour = moment().format("HH");
 var m = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#currentDay").text(m.toString())
@@ -82,7 +83,8 @@ $("#clear-btn").click(function () {
     location.reload()
 })
 
-// CSS Analog Clock By: JWardee Source:https://codepen.io/JWardee/pen/XmMvGK
+// CSS Analog Clock By: JWardee 
+// Source:https://codepen.io/JWardee/pen/XmMvGK
 
 function updateClock() {
     let now = moment(),
